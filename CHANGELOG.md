@@ -26,6 +26,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Template license guide (`LICENSE`).
 - Universal `.gitattributes` and expanded `.gitignore`.
 - Template setup and quickstart guide (`README.md`).
+- test
 
 ## [1.0.0-rc.1] - 2026-10-20
 <!-- EXAMPLE: Use '-rc.X' for Release Candidates. The release action will automatically mark it as a Pre-release on GitHub. -->
