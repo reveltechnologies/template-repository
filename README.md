@@ -12,7 +12,7 @@ A pre-configured repository template with automated security scanning, release m
 - **`LICENSE`**: Replace with your project's license (e.g., MIT, Apache 2.0).
 - **`CHANGELOG.md`**: Add your version number and release notes.
 - **`src/`**: Place your project source code files here.
-- **`docs/`**: Add documentation pages to mirror to the repository Wiki (create a `Home` page in the **Wiki** tab first to initialize).
+- **`docs/`**: Add documentation pages to mirror to the repository Wiki (create a `Home` page in the **Wiki** tab first to initialize. If the Wiki tab is missing, enable it in **Settings** > **General** -> **Features**; note that wikis are not available on free private repositories).
 
 ### When you commit and push changes, it will automatically:
 - **Run CodeQL security analysis** across all detected languages.
