@@ -10,7 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2026-10-24
 
 ### Added
-- Universal CodeQL security workflow (`codeql.yml`) with dynamic multi-language detection.
+- Universal CodeQL security workflow (`codeql.yml`) using `codeql-action@v4` with dynamic multi-language detection.
+- Automated repository visibility check skipping CodeQL on private repositories to avoid Advanced Security license errors.
 - Automated release workflow (`release-from-changelog.yml`) syncing GitHub releases and comparison links.
 - Automated `SECURITY.md` management tracking the latest major release.
 - Wiki synchronization workflow (`wiki-sync.yml`) mirroring `docs/` to GitHub Wiki.
