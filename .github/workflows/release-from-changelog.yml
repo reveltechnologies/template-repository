@@ -18,6 +18,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Process Changelog, Update Releases and SECURITY.md
         env:
@@ -143,7 +144,8 @@ jobs:
                       diff_res = subprocess.run(["git", "diff", "--staged", "--quiet"])
                       if diff_res.returncode != 0:
                           subprocess.run(["git", "commit", "-m", f"docs: update SECURITY.md to support {latest_major}.x [skip ci]"], check=True)
-                          subprocess.run(["git", "push"], check=True)
+                          auth_url = f"https://x-access-token:{token}@github.com/{repo}.git"
+                          subprocess.run(["git", "push", auth_url, f"HEAD:{os.environ.get('GITHUB_REF_NAME', 'main')}"], check=True)
                           print("Pushed updated SECURITY.md to repository.")
 
                           # Check if documentation_sync is enabled in config.yaml
