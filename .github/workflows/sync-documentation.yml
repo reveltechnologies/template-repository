@@ -13,6 +13,9 @@ concurrency:
   group: sync-documentation
   cancel-in-progress: false
 
+env:
+  ACTIONS_FLAGS_RECORD_NODE_DEPRECATION: 'false'
+
 jobs:
   sync:
     name: Sync to All Branches

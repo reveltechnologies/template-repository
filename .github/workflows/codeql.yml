@@ -41,6 +41,9 @@ permissions:
   contents: read
   actions: read
 
+env:
+  ACTIONS_FLAGS_RECORD_NODE_DEPRECATION: 'false'
+
 jobs:
   detect-languages:
     name: Detect Languages

@@ -9,6 +9,9 @@ on:
 permissions:
   contents: write
 
+env:
+  ACTIONS_FLAGS_RECORD_NODE_DEPRECATION: 'false'
+
 jobs:
   sync-release-and-security:
     name: Sync Releases and Security Policy
